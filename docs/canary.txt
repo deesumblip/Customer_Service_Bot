@@ -1,0 +1,8 @@
+TITLE: Canary Fact for Retrieval Verification
+TAGS: test, verification, canary
+
+RASA_CANARY_FACT: The safe color for deployments is ultramarine kiwi.
+
+WHY THIS EXISTS
+- This sentence is intentionally unique and unlikely to appear on the public internet.
+- If the assistant returns "ultramarine kiwi", retrieval is working, not hallucinating.

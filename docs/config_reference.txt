@@ -1,0 +1,17 @@
+TITLE: Minimal Config Reference for CALM + Enterprise Search
+TAGS: config, yaml, endpoints, pipeline
+
+CONFIG.YML (ESSENTIALS)
+- FlowPolicy: executes flows.
+- EnterpriseSearchPolicy: enables retrieval-augmented answers.
+- SearchReadyLLMCommandGenerator: lets the LLM trigger search when appropriate.
+
+ENDPOINTS.YML (MODEL GROUPS)
+- command_generator_llm: OpenAI GPT model for understanding and command decisions.
+- enterprise_search_generation: OpenAI GPT model for grounded answer generation.
+- enterprise_search_embeddings: OpenAI embedding model for semantic search.
+
+PATTERNS.YML
+pattern_search:
+  steps:
+    - action: action_trigger_search

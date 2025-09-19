@@ -1,0 +1,16 @@
+version: "3.1"
+
+flows:
+  pattern_search:
+    description: |
+      Handle knowledge-based questions 
+      via Enterprise Search.
+    steps:
+      - action: action_trigger_search
+
+  pattern_chitchat:
+    description: |
+      Handle small talk and 
+      casual conversation.
+    steps:
+      - action: utter_chitchat

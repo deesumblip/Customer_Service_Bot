@@ -1,0 +1,11 @@
+version: "3.1"
+
+responses:
+  utter_greet:
+    - text: "Hey! I'm your docs assistant. Ask me anything about the docs."
+
+  utter_help:
+    - text: "Try: 'How do I configure CALM?' or 'What is Enterprise Search?'"
+
+  utter_chitchat:
+    - text: "Happy to chat! If you need docs help, ask me a question any time."

@@ -1,0 +1,8 @@
+version: "3.1"
+
+flows:
+  greet_user:
+    description: Greet and offer help.
+    steps:
+      - action: utter_greet
+      - action: utter_help

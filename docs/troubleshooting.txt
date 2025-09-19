@@ -1,0 +1,22 @@
+TITLE: Troubleshooting Guide
+TAGS: errors, fixes, debugging, logs
+
+SYMPTOM: Bot returns small talk instead of an answer.
+CAUSE: pattern_search not overridden.
+FIX: In data/patterns.yml, set pattern_search to action_trigger_search and retrain.
+
+SYMPTOM: Empty or vague answers.
+CAUSE: Missing or sparse docs.
+FIX: Add .txt files with clear headings and Q&A; retrain.
+
+SYMPTOM: License error when running Rasa Pro.
+CAUSE: RASA_LICENSE not exported.
+FIX: echo $RASA_LICENSE, source .env, restart terminal.
+
+SYMPTOM: Inspector UI not reachable in Codespaces.
+CAUSE: Port not forwarded.
+FIX: Open PORTS panel and set port to public/forwarded; reopen the link.
+
+DEBUGGING TIPS
+- Use: rasa shell --debug to see actions and policies chosen.
+- Look for action_trigger_search to confirm RAG activation.

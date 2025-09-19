@@ -1,0 +1,24 @@
+TITLE: Enterprise Search (RAG) Integration Guide
+TAGS: rag, retrieval, search, knowledge, enterprise search
+
+OVERVIEW
+Enterprise Search integrates retrieval-augmented generation into Rasa assistants.
+It indexes plain-text documents from ./docs and uses embeddings to find relevant passages.
+
+TRAIN-TIME INDEXING
+- Place .txt files under ./docs (subfolders allowed).
+- Run: rasa train
+- The training process chunks and embeds documents and writes a vector index (FAISS by default).
+
+RUNTIME BEHAVIOR
+- The LLM command generator may emit a knowledge-answer command for informational queries.
+- The pattern_search flow should call: action_trigger_search
+- The policy retrieves top passages and prompts the answer LLM with grounded context.
+
+TROUBLESHOOTING
+- If the assistant replies with generic chit-chat, check pattern_search is overridden.
+- If answers are empty, confirm the .txt files exist and retrain.
+
+VALIDATION EXAMPLE
+Q: "Which color is safe for deployments?"
+A: "Ultramarine kiwi" (from canary.txt).

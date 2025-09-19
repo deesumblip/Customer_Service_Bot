@@ -1,0 +1,12 @@
+version: "3.1"
+assistant_id: "docs-assistant-devrel-demo"
+language: "en"
+
+policies:
+  - name: FlowPolicy
+  - name: EnterpriseSearchPolicy
+
+pipeline:
+  - name: SearchReadyLLMCommandGenerator
+    llm:
+      model_group: command_generator_llm

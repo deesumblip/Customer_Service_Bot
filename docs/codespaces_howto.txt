@@ -1,0 +1,24 @@
+TITLE: Running the Assistant in GitHub Codespaces
+TAGS: codespaces, environment, devrel, demo
+
+CREATE A CODESPACE
+- Use a repo template or existing project and click "Create Codespace".
+- Codespaces provisions a Linux container with VS Code in the browser.
+
+ENV VARIABLES
+- Put secrets in .env:
+  RASA_LICENSE=...
+  OPENAI_API_KEY=...
+- Load them: source .env
+
+WORKFLOW
+- Train: rasa train
+- Inspect UI: rasa inspect (browser-based chat and debug)
+- Terminal test: rasa shell --debug
+
+PORT FORWARDING
+- If the Inspector page does not auto-open, use the PORTS panel to forward it.
+
+CLIPBOARD NOTES
+- Browser clipboard is controlled by site permissions.
+- Allow clipboard for github.com if copy/paste behaves oddly.

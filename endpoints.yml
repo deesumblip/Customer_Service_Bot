@@ -1,0 +1,27 @@
+# Action server configuration
+action_endpoint:
+  actions_module: "actions"
+
+# Allow rephrasing of responses using a Rasa-hosted model
+nlg:
+  type: rephrase
+
+model_groups:
+  - id: command_generator_llm
+    models:
+      - provider: "openai"
+        model: "gpt-4o-mini"
+        api_key: "${OPENAI_API_KEY}"
+
+  - id: enterprise_search_generation
+    models:
+      - provider: "openai"
+        model: "gpt-3.5-turbo"
+        api_key: "${OPENAI_API_KEY}"
+
+  - id: enterprise_search_embeddings
+    models:
+      - provider: "openai"
+        model: "text-embedding-3-small"
+        api_key: "${OPENAI_API_KEY}"
+

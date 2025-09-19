@@ -1,0 +1,17 @@
+TITLE: Frequently Asked Questions (FAQ)
+TAGS: faq, troubleshooting, quick answers
+
+Q: Do I need to train intents?
+A: No. CALM uses an LLM to understand messages in context and produce commands.
+
+Q: Why do I need pattern_search?
+A: It is the entry point for knowledge answers. Overriding it to action_trigger_search enables document retrieval.
+
+Q: Where do I put my docs?
+A: Place .txt files under ./docs. They are indexed at training time.
+
+Q: How do I validate RAG works?
+A: Ask for the canary fact: "What does RASA_CANARY_FACT say?" Expected: "Ultramarine kiwi."
+
+Q: Can I scale beyond FAISS?
+A: Yes, switch to a managed vector database like Milvus or Qdrant and update config accordingly.
