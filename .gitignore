@@ -39,6 +39,3 @@ logs/
 # Temporary files
 *.tmp
 *.temp
-
-# Non-essential documentation (removed)
-# non_essential/

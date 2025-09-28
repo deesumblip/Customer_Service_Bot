@@ -6,3 +6,13 @@ flows:
     steps:
       - action: utter_greet
       - action: utter_help
+
+  canary_test:
+    description: Handle canary test questions directly.
+    steps:
+      - action: action_check_canary
+
+  pattern_search:
+    description: Handle knowledge-based questions via Enterprise Search.
+    steps:
+      - action: action_trigger_search

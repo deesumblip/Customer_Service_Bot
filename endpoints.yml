@@ -1,6 +1,6 @@
-# Action server configuration
+# Action server configuration for custom actions (like canary test)
 action_endpoint:
-  actions_module: "actions"
+  url: "http://localhost:5055/webhook"
 
 # Allow rephrasing of responses using a Rasa-hosted model
 nlg:
@@ -24,4 +24,3 @@ model_groups:
       - provider: "openai"
         model: "text-embedding-3-small"
         api_key: "${OPENAI_API_KEY}"
-

@@ -1,0 +1,1 @@
+Is There A Fuel Spend Limit With Pay At Pump Choose your maximum spend per transaction from between 15 to a full tank of fuel. Before you reach the chosen upper limit, the pump will stop automatically.

@@ -1,0 +1,1 @@
+Some Of My Shell Go Transactions Are Not Showing In My Transaction History Why Is This Happening Only your Shell Go+ qualifying transactions from the last 3 months will be displayed in the Shell Go+ transaction history, this includes Pay at Pump transactions.

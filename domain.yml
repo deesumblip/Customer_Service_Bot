@@ -1,11 +1,21 @@
 version: "3.1"
 
+actions:
+  - action_check_canary
+
+slots:
+  canary_detected:
+    type: bool
+
 responses:
   utter_greet:
-    - text: "Hey! I'm your docs assistant. Ask me anything about the docs."
+    - text: "Hey! I'm your Shell customer service assistant. Ask me anything about Shell services, fuel, rewards, or stations."
 
   utter_help:
-    - text: "Try: 'How do I configure CALM?' or 'What is Enterprise Search?'"
+    - text: "Try: 'How do I find Shell station opening times?' or 'What is Shell Go?' or 'How does Pay at Pump work?'"
 
   utter_chitchat:
-    - text: "Happy to chat! If you need docs help, ask me a question any time."
+    - text: "Happy to chat! If you need help with Shell services, ask me a question any time."
+
+  utter_can_do_something_else:
+    - text: "What else can I help you with?"

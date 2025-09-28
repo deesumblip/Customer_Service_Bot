@@ -1,12 +1,12 @@
 version: "3.1"
 
-flows:
-  pattern_search:
+patterns:
+  pattern_canary:
     description: |
-      Handle knowledge-based questions 
-      via Enterprise Search.
+      Handle canary test questions 
+      with direct routing.
     steps:
-      - action: action_trigger_search
+      - action: action_check_canary
 
   pattern_chitchat:
     description: |

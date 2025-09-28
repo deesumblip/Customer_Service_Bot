@@ -1,0 +1,1 @@
+Is There A Way Of Using Location Services Only When You Use The App Yes, this is exactly how the app works. It only uses your location services when the app is running on your mobile device. However, without your permission to use location services, the app won't work as we can't tailor anything to you.

@@ -1,0 +1,1 @@
+I Made 2 Qualifying Transactions In A Short Period Of Time But It Only Recorded 1 Visit If 2 or more visits occur within 10 minutes of each other both transactions will be amalgamated and will count as one qualifying visit.
