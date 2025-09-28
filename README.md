@@ -291,8 +291,8 @@ python autoload_env.py
 # Train with debug output
 python autoload_env.py && rasa train --debug
 
-# Test specific functionality
-python test_latest_model.py
+# Test the assistant (after training)
+python autoload_env.py && rasa shell
 ```
 
 ## Contributing
